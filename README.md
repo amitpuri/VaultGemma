@@ -350,9 +350,19 @@ VaultGemma showcases impressive capabilities across various domains. Here are so
 > 
 > The table below shows the characteristics of a successful study plan for a large group. The sample was selected at random from the 10-person survey and used to fill in the missing data:
 > 
-> $\begin{array}{|l|c|} \hline & \text { Characteristics } \\ \hline \text { Gender } & 27 \\ \hline \text { Age } & 34 \\ \hline \text { Academic Background } & 68 \\ \hline \text { Study Type } & 59 \\ \hline \text { Time Spent on Study } & 42 \\ \hline \text { Subjects } & 22 \\ \hline \text { Total Hours Spent } & 1,100\end{array} $
+> | Characteristic | Value |
+> |----------------|-------|
+> | Gender | 27 |
+> | Age | 34 |
+> | Academic Background | 68 |
+> | Study Type | 59 |
+> | Time Spent on Study | 42 |
+> | Subjects | 22 |
+> | Total Hours Spent | 1,100 |
 > 
 > a. What are some reasons why this particular study may have been unsuccessful? b. Based on your answers to part (b), what conclusions might be drawn about the effectiveness of your study plan? c."
+
+
 
 ### 🔬 Scientific Knowledge
 
