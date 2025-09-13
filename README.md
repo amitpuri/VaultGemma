@@ -4,12 +4,93 @@
 
 A Python library for running Google's VaultGemma models with support for multiple providers (Hugging Face, Kaggle).
 
+## Table of Contents
+
+- [Installation](#installation)
+  - [Prerequisites](#prerequisites)
+  - [Quick Installation](#quick-installation)
+  - [Dependency Installation](#dependency-installation)
+  - [Alternative Installation Methods](#alternative-installation-methods)
+  - [Running Examples](#running-examples)
+- [Quick Start](#quick-start)
+  - [Basic Usage](#basic-usage)
+  - [Using Different Providers](#using-different-providers)
+- [Project Structure](#project-structure)
+- [VaultGemma Capabilities Demonstration](#-vaultgemma-capabilities-demonstration)
+  - [Creative Writing & Storytelling](#-creative-writing--storytelling)
+  - [Technical Explanations](#-technical-explanations)
+  - [Problem Solving & Innovation](#-problem-solving--innovation)
+  - [Conversational AI](#-conversational-ai)
+  - [Scientific Knowledge](#-scientific-knowledge)
+  - [Philosophical & Ethical Discussion](#-philosophical--ethical-discussion)
+  - [Batch Processing Capabilities](#-batch-processing-capabilities)
+  - [Chat Interaction](#-chat-interaction)
+  - [Interactive Chat Session](#-interactive-chat-session)
+  - [Formatted Response Examples](#-formatted-response-examples)
+  - [Performance Metrics](#-performance-metrics)
+- [Examples](#examples)
+  - [Running Examples](#running-examples-1)
+  - [Example Categories](#example-categories)
+  - [Command Line Interface](#command-line-interface)
+- [Dependencies](#dependencies)
+- [Configuration](#configuration)
+- [Advanced Usage](#advanced-usage)
+- [Testing](#testing)
+- [Authentication Setup](#authentication-setup)
+- [Error Handling](#error-handling)
+- [Contributing](#contributing)
+- [Development Setup](#development-setup)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [Troubleshooting](#troubleshooting)
+- [Changelog](#changelog)
+
+## 🚀 Getting Started
+
+VaultGemma is a powerful Python library for running Google's VaultGemma models with support for multiple providers. Get started in minutes with our simple installation process.
+
+### ⚡ Quick Start (Recommended)
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/VaultGemma.git
+cd VaultGemma
+
+# 2. Create and activate virtual environment
+python -m venv venv
+# On Windows:
+venv\Scripts\activate
+# On Linux/Mac:
+source venv/bin/activate
+
+# 3. Install dependencies
+pip install -r requirements/core.txt
+pip install git+https://github.com/huggingface/transformers@v4.56.1-Vault-Gemma-preview
+pip install -e .
+
+# 4. Run your first example
+python run_example.py starter hello_world
+```
+
+## ✨ Key Features
+
+- **🤖 Multiple Model Support**: Run Google's VaultGemma models with ease
+- **🔌 Provider Flexibility**: Support for Hugging Face and Kaggle providers
+- **💬 Interactive Chat**: Real-time chat sessions with conversation history
+- **⚡ Batch Processing**: Efficiently process multiple prompts simultaneously
+- **🛠️ Easy Configuration**: Simple configuration system for models and generation
+- **🔐 Authentication**: Secure authentication for private models
+- **📚 Rich Examples**: Comprehensive examples for all skill levels
+- **🎯 CLI Support**: Command-line interface for quick interactions
+- **🧪 Well Tested**: Full test suite with comprehensive coverage
+
 ## Installation
 
 ### Prerequisites
 
 - Python 3.8 or higher
 - Git (for installing the VaultGemma-specific transformers version)
+- 4GB+ RAM (recommended for optimal performance)
 
 ### Quick Installation
 
@@ -110,6 +191,7 @@ python run_example.py hf basic              # Hugging Face basic usage
 python run_example.py kaggle auth_setup     # Kaggle authentication setup
 python run_example.py advanced chat         # Advanced chat example
 python run_example.py advanced batch        # Batch processing example
+python run_example.py advanced interactive  # Interactive chat session
 ```
 
 **Available Example Categories:**
@@ -742,7 +824,7 @@ response = generator.chat(messages, generation_config)
 
 ### 🎮 Interactive Chat Session
 
-VaultGemma also provides an interactive chat session with advanced features:
+VaultGemma provides a powerful interactive chat session with advanced features:
 
 ```bash
 # Run the interactive chat example
@@ -760,6 +842,28 @@ python run_example.py advanced interactive
   - `/status` - Show conversation statistics
 - **Error handling**: Graceful handling of interruptions and errors
 - **Resource management**: Automatic cleanup of model resources
+
+**Example Interactive Session:**
+```
+🎉 Welcome to VaultGemma Interactive Chat!
+Type '/help' for commands or start chatting!
+==================================================
+
+👤 You: What is machine learning?
+
+🤖 Assistant: Machine learning is a subset of artificial intelligence that enables computers to learn and make decisions from data without being explicitly programmed for every task. It works by finding patterns in data and using those patterns to make predictions or decisions on new, unseen data.
+
+👤 You: Can you give me a simple example?
+
+🤖 Assistant: Sure! Here's a simple example: Imagine you want to predict house prices. You'd feed the machine learning algorithm data about houses (size, location, number of bedrooms, etc.) and their actual prices. The algorithm learns the patterns - like "larger houses in good neighborhoods cost more" - and then can predict prices for new houses it hasn't seen before.
+
+👤 You: /status
+
+📊 Conversation Status:
+   User messages: 2
+   Assistant messages: 2
+   Total messages: 4
+```
 
 **Sample Chat Response:**
 
@@ -1323,7 +1427,7 @@ pip install -e ".[dev]"
 python run_test.py
 
 # Run examples
-python run_example.py basic
+python run_example.py starter hello_world
 ```
 
 ## License
@@ -1345,6 +1449,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 2. **Authentication Errors**: Set up authentication using the CLI or programmatically
 3. **Memory Issues**: Use smaller models or reduce batch sizes
 4. **Tokenizer Issues**: Use `use_fast_tokenizer=False` in ModelConfig
+5. **Interactive Chat Issues**: If the interactive chat doesn't respond, try pressing Ctrl+C to exit and restart
+6. **Command Not Found**: Make sure you're using the correct example names (e.g., `interactive` not `interactive_chat`)
 
 ### Getting Help
 
@@ -1353,6 +1459,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Include your Python version, operating system, and error messages
 
 ## Changelog
+
+### v1.1.0 (Latest)
+- ✨ **New Feature**: Interactive chat session with conversation history
+- ✨ **New Feature**: Special commands for chat management (`/help`, `/clear`, `/exit`, `/reset`, `/status`)
+- 📚 **Enhanced**: Updated documentation with comprehensive examples
+- 🛠️ **Improved**: Better error handling and resource management
+- 📖 **Added**: Table of contents for better navigation
+- 🎯 **Enhanced**: Improved getting started guide
 
 ### v1.0.0
 - Initial release
