@@ -1,4 +1,6 @@
-# VaultGemma
+![AI Generated](https://img.shields.io/badge/AI-Generated-blueviolet?style=for-the-badge&logo=openai&logoColor=white)
+
+# VaultGemma Usage library
 
 A Python library for running Google's VaultGemma models with support for multiple providers (Hugging Face, Kaggle).
 
