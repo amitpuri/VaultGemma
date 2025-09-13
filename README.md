@@ -452,6 +452,176 @@ response = generator.chat(messages, generation_config)
 > User: I'm interested in learning about sustainable living. Can you help me understand what it means and how I can start?
 > Assistant: Yes, please! Please have a look at our website to learn more."
 
+### 📋 Formatted Response Examples
+
+VaultGemma excels at generating well-structured, formatted responses across various content types:
+
+#### 📊 **Table Generation**
+
+**Prompt:** "Create a comparison table of renewable energy sources with their advantages and disadvantages."
+
+**VaultGemma Response:**
+> | Energy Source | Advantages | Disadvantages | Efficiency |
+> |---------------|------------|---------------|------------|
+> | Solar | Clean, abundant, low maintenance | Weather dependent, high initial cost | 15-22% |
+> | Wind | Clean, cost-effective, scalable | Intermittent, noise concerns | 35-45% |
+> | Hydroelectric | Reliable, long lifespan, storage | Environmental impact, location dependent | 85-90% |
+> | Geothermal | Consistent, low emissions, small footprint | Limited locations, high drilling costs | 10-20% |
+> | Biomass | Renewable, waste reduction, dispatchable | Land use, emissions, seasonal | 20-25% |
+
+#### 📝 **List Formatting**
+
+**Prompt:** "List the key steps for implementing a machine learning project."
+
+**VaultGemma Response:**
+> **Machine Learning Project Implementation Steps:**
+> 
+> 1. **Problem Definition**
+>    - Define the business objective
+>    - Identify success metrics
+>    - Determine data requirements
+> 
+> 2. **Data Collection & Preparation**
+>    - Gather relevant datasets
+>    - Clean and preprocess data
+>    - Handle missing values and outliers
+> 
+> 3. **Exploratory Data Analysis (EDA)**
+>    - Visualize data distributions
+>    - Identify patterns and correlations
+>    - Generate insights and hypotheses
+> 
+> 4. **Model Development**
+>    - Select appropriate algorithms
+>    - Split data into train/validation/test sets
+>    - Train and tune model parameters
+> 
+> 5. **Model Evaluation**
+>    - Test on unseen data
+>    - Measure performance metrics
+>    - Compare with baseline models
+> 
+> 6. **Deployment & Monitoring**
+>    - Deploy to production environment
+>    - Monitor model performance
+>    - Implement feedback loops
+
+#### 🔢 **Mathematical Expressions**
+
+**Prompt:** "Explain the mathematical formula for compound interest with examples."
+
+**VaultGemma Response:**
+> **Compound Interest Formula:**
+> 
+> The compound interest formula is:
+> 
+> $$A = P\left(1 + \frac{r}{n}\right)^{nt}$$
+> 
+> Where:
+> - $A$ = Final amount
+> - $P$ = Principal amount (initial investment)
+> - $r$ = Annual interest rate (decimal)
+> - $n$ = Number of times interest is compounded per year
+> - $t$ = Time in years
+> 
+> **Example Calculation:**
+> 
+> If you invest $1,000 at 5% annual interest, compounded monthly for 3 years:
+> 
+> $$A = 1000\left(1 + \frac{0.05}{12}\right)^{12 \times 3}$$
+> 
+> $$A = 1000\left(1 + 0.004167\right)^{36}$$
+> 
+> $$A = 1000 \times 1.1616 = \$1,161.60$$
+
+#### 💻 **Code Examples**
+
+**Prompt:** "Write a Python function to calculate the Fibonacci sequence."
+
+**VaultGemma Response:**
+> ```python
+> def fibonacci(n):
+>     """
+>     Calculate the nth Fibonacci number using dynamic programming.
+>     
+>     Args:
+>         n (int): The position in the Fibonacci sequence
+>     
+>     Returns:
+>         int: The nth Fibonacci number
+>     """
+>     if n <= 0:
+>         return 0
+>     elif n == 1:
+>         return 1
+>     
+>     # Initialize the first two Fibonacci numbers
+>     fib = [0, 1]
+>     
+>     # Calculate Fibonacci numbers up to n
+>     for i in range(2, n + 1):
+>         fib.append(fib[i-1] + fib[i-2])
+>     
+>     return fib[n]
+> 
+> # Example usage
+> for i in range(10):
+>     print(f"F({i}) = {fibonacci(i)}")
+> ```
+> 
+> **Output:**
+> ```
+> F(0) = 0
+> F(1) = 1
+> F(2) = 1
+> F(3) = 2
+> F(4) = 3
+> F(5) = 5
+> F(6) = 8
+> F(7) = 13
+> F(8) = 21
+> F(9) = 34
+> ```
+
+#### 📈 **Structured Analysis**
+
+**Prompt:** "Analyze the pros and cons of remote work in a structured format."
+
+**VaultGemma Response:**
+> ## Remote Work Analysis
+> 
+> ### ✅ **Advantages**
+> 
+> **For Employees:**
+> - **Work-life balance:** Flexible schedules and no commute
+> - **Cost savings:** Reduced transportation and meal expenses
+> - **Productivity:** Fewer office distractions and interruptions
+> - **Location independence:** Work from anywhere with internet
+> 
+> **For Employers:**
+> - **Cost reduction:** Lower office space and utility costs
+> - **Talent access:** Hire from global talent pool
+> - **Employee retention:** Higher job satisfaction and loyalty
+> - **Business continuity:** Less disruption during emergencies
+> 
+> ### ❌ **Disadvantages**
+> 
+> **For Employees:**
+> - **Isolation:** Reduced social interaction and team bonding
+> - **Technology issues:** Dependence on stable internet and equipment
+> - **Work-life boundaries:** Difficulty separating work and personal time
+> - **Career advancement:** Limited visibility and networking opportunities
+> 
+> **For Employers:**
+> - **Communication challenges:** Coordination and collaboration difficulties
+> - **Security concerns:** Data protection and cybersecurity risks
+> - **Management complexity:** Monitoring and evaluating remote performance
+> - **Cultural impact:** Maintaining company culture and values
+> 
+> ### 📊 **Recommendation**
+> 
+> **Hybrid approach** combining 2-3 days remote with office presence appears optimal for most organizations, balancing flexibility with collaboration needs.
+
 ### 📊 Performance Metrics
 
 Our comprehensive testing across 8 different scenarios with 32+ prompts demonstrates VaultGemma's capabilities:
@@ -466,12 +636,14 @@ Our comprehensive testing across 8 different scenarios with 32+ prompts demonstr
 
 1. **Creative Writing:** Generates engaging stories, poems, and narratives
 2. **Technical Explanations:** Simplifies complex concepts for different audiences
-3. **Problem Solving:** Provides innovative solutions to real-world challenges
+3. **Problem Solving:** Provides innovative solutions for real-world challenges
 4. **Conversational AI:** Offers helpful, personalized assistance
 5. **Scientific Knowledge:** Demonstrates deep understanding of technical subjects
 6. **Philosophical Reasoning:** Engages with complex ethical and philosophical questions
 7. **Batch Processing:** Efficiently handles multiple requests simultaneously
 8. **Context Awareness:** Maintains conversation context across interactions
+9. **Structured Output:** Generates well-formatted responses with tables, lists, and code
+10. **Mathematical Expressions:** Handles complex mathematical notation and formulas
 
 ### 🚀 Try It Yourself
 
