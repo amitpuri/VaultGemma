@@ -216,7 +216,8 @@ VaultGemma/
 │   │   └── authentication_setup.py
 │   └── advanced/                # Advanced usage examples
 │       ├── chat_example.py
-│       └── batch_processing.py
+│       ├── batch_processing.py
+│       └── interactive_chat.py
 ├── starter/                     # Beginner-friendly starter scripts
 │   ├── hello_world.py
 │   └── quick_start.py
@@ -739,6 +740,27 @@ messages = [
 response = generator.chat(messages, generation_config)
 ```
 
+### 🎮 Interactive Chat Session
+
+VaultGemma also provides an interactive chat session with advanced features:
+
+```bash
+# Run the interactive chat example
+python run_example.py advanced interactive
+```
+
+**Features:**
+- **Real-time conversation**: Continuous chat session with the model
+- **Conversation history**: Maintains full context throughout the session
+- **Special commands**: 
+  - `/help` - Show available commands
+  - `/clear` - Clear conversation history
+  - `/exit` or `/quit` - Exit the chat session
+  - `/reset` - Reset conversation with new system prompt
+  - `/status` - Show conversation statistics
+- **Error handling**: Graceful handling of interruptions and errors
+- **Resource management**: Automatic cleanup of model resources
+
 **Sample Chat Response:**
 
 **System Message:** "You are a helpful, knowledgeable, and friendly AI assistant. You provide accurate information and engage in meaningful conversations."
@@ -999,6 +1021,7 @@ python run_example.py starter quick_start
 python run_example.py hf basic
 python run_example.py advanced chat
 python run_example.py advanced batch
+python run_example.py advanced interactive
 ```
 
 ## Examples
@@ -1023,6 +1046,7 @@ python run_example.py kaggle auth_setup     # Kaggle authentication setup
 # Advanced examples
 python run_example.py advanced chat         # Chat-style interaction
 python run_example.py advanced batch        # Batch processing
+python run_example.py advanced interactive  # Interactive chat session
 ```
 
 ### Example Categories
@@ -1042,6 +1066,7 @@ python run_example.py advanced batch        # Batch processing
 #### 🔧 Advanced Examples
 - **chat**: Chat-style interaction with context
 - **batch**: Batch processing multiple prompts
+- **interactive**: Interactive chat session with commands and conversation history
 
 ### Command Line Interface
 

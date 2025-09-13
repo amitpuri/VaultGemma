@@ -31,6 +31,7 @@ def main():
         print("\n📁 Advanced Examples:")
         print("  advanced chat       - Chat-style interaction")
         print("  advanced batch      - Batch processing example")
+        print("  advanced interactive - Interactive chat session")
         print("\nUsage: python run_example.py <category> <example_name>")
         print("\nExamples:")
         print("  python run_example.py starter hello_world")
@@ -67,7 +68,8 @@ def main():
         },
         "advanced": {
             "chat": "chat_example.py",
-            "batch": "batch_processing.py"
+            "batch": "batch_processing.py",
+            "interactive": "interactive_chat.py"
         }
     }
     
