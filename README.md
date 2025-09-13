@@ -1084,3 +1084,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Command-line interface
 - Full test suite
 - Documentation and examples
+
+## Read this article
+- [VaultGemma: Private LLM for Secure Prompt Engineering](https://medium.amitpuri.com/vaultgemma-private-llm-for-secure-prompt-engineering-95f5029def66)
