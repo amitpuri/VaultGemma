@@ -1,0 +1,36 @@
+# Default configuration for VaultGemma
+
+# Model configuration
+model:
+  name: "google/vaultgemma-1b"
+  device_map: "auto"
+  dtype: "auto"
+  use_fast_tokenizer: false
+  trust_remote_code: false
+  cache_dir: null
+  local_files_only: false
+
+# Generation configuration
+generation:
+  max_new_tokens: 100
+  temperature: 0.7
+  do_sample: true
+  top_p: 0.9
+  top_k: 50
+  repetition_penalty: 1.1
+  num_beams: 1
+  early_stopping: false
+
+# Authentication configuration
+auth:
+  provider: "huggingface"  # "huggingface" or "kaggle"
+  token: null
+  username: null
+  api_key: null
+  config_file: null
+
+# Logging configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: null  # Set to a file path to enable file logging

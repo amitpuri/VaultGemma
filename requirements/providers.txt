@@ -1,0 +1,9 @@
+# Provider-specific dependencies
+# Install these based on which providers you want to use
+
+# Hugging Face provider (default, included in core)
+# huggingface-hub>=0.34.0  # Already in core.txt
+
+# Kaggle provider (optional)
+kagglehub>=0.3.13
+kaggle>=1.5.16

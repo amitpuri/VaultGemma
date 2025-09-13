@@ -1,0 +1,13 @@
+# Core ML dependencies for VaultGemma
+# These are the essential dependencies required for basic functionality
+
+# Core ML libraries
+torch>=2.0.0
+transformers>=4.56.1
+huggingface-hub>=0.34.0
+tokenizers>=0.22.0
+accelerate>=1.0.0
+
+# Text processing
+sentencepiece>=0.2.1
+blobfile>=3.1.0

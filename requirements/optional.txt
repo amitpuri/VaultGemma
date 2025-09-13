@@ -1,0 +1,13 @@
+# Optional dependencies for enhanced features
+# Install with: pip install -r requirements/optional.txt
+
+# CLI enhancements
+huggingface_hub[cli]>=0.34.0
+
+# Jupyter notebook support
+jupyter>=1.0.0
+ipywidgets>=8.0.0
+
+# Performance monitoring
+psutil>=5.9.0
+memory-profiler>=0.61.0

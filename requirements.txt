@@ -1,0 +1,35 @@
+# VaultGemma Dependencies
+# 
+# This file contains the main dependencies for VaultGemma.
+# For organized installation, use the specific requirement files:
+#
+# Core dependencies (required):
+#   pip install -r requirements/core.txt
+#
+# Provider-specific dependencies (optional):
+#   pip install -r requirements/providers.txt
+#
+# Development dependencies (for contributors):
+#   pip install -r requirements/dev.txt
+#
+# Optional features:
+#   pip install -r requirements/optional.txt
+#
+# Or install everything at once:
+#   pip install -r requirements/core.txt -r requirements/providers.txt
+
+# Core ML libraries (required)
+torch>=2.0.0
+transformers>=4.56.1
+huggingface-hub>=0.34.0
+tokenizers>=0.22.0
+accelerate>=1.0.0
+sentencepiece>=0.2.1
+blobfile>=3.1.0
+
+# Provider-specific dependencies (optional)
+kagglehub>=0.3.13
+kaggle>=1.5.16
+
+# Note: Install the VaultGemma-specific transformers version with:
+# pip install git+https://github.com/huggingface/transformers@v4.56.1-Vault-Gemma-preview
