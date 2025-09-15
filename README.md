@@ -1446,7 +1446,7 @@ python run_example.py starter hello_world
 | PaliGemma | Vision-language tasks | Object detection + segmentation | ✅ |
 
 
-##⚡ A comprehensive comparison of all models in the Gemma ecosystem, including the privacy-focused VaultGemma:
+## ⚡ A comprehensive comparison of all models in the Gemma ecosystem, including the privacy-focused VaultGemma:
 
 | Model | Parameters | Context | Architecture | Key Innovation | Specialization | Multimodal | Performance Highlights | Release |
 |-------|------------|---------|--------------|----------------|----------------|------------|------------------------|---------|
