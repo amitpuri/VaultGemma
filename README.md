@@ -1430,6 +1430,39 @@ python run_test.py
 python run_example.py starter hello_world
 ```
 
+## Gemma Ecosystem + VaultGemma: Comparison Tables
+
+## 📊 Quick Reference
+
+| Model Family | Best For | Key Metric | Multimodal |
+|--------------|----------|------------|------------|
+| VaultGemma | Privacy-preserving AI | Zero data leakage | ❌ |
+| Gemma 1/2/3 | General text tasks | 27B competes with 50B+ models | ✅ (Gemma 3) |
+| EmbeddingGemma | Semantic search | 68.2 MTEB score | ❌ |
+| CodeGemma | Programming assistance | 8 languages supported | ❌ |
+| MedGemma | Healthcare AI | 87.7% MedQA accuracy | ✅ |
+| ShieldGemma | Content moderation | 7 safety categories | ✅ (v2) |
+| RecurrentGemma | Long sequences | Arbitrary length processing | ❌ |
+| PaliGemma | Vision-language tasks | Object detection + segmentation | ✅ |
+
+
+##⚡ A comprehensive comparison of all models in the Gemma ecosystem, including the privacy-focused VaultGemma:
+
+| Model | Parameters | Context | Architecture | Key Innovation | Specialization | Multimodal | Performance Highlights | Release |
+|-------|------------|---------|--------------|----------------|----------------|------------|------------------------|---------|
+| **VaultGemma** | 1B | 1K tokens | Decoder-only | **Differential Privacy (ε≤2.0)** | Privacy/Security | ❌ | ARC-C: 26.45, PIQA: 68.0, **ZERO data leakage** | 2024 |
+| **Gemma** | 2B, 7B | 8K tokens | Decoder-only | Multi-Query Attention | General Purpose | ❌ | Foundation model with RoPE embeddings | Feb 2024 |
+| **Gemma 2** | 2B, 9B, 27B | 8K tokens | Decoder-only | Hybrid Attention (Local+Global) | General Enhanced | ❌ | **27B competitive with 2x larger models** | Jun 2024 |
+| **Gemma 3** | 270M-27B | 32K-128K | Decoder-only | Multimodal + Extended Context | Multimodal | ✅ | SigLIP 400M vision encoder, 140+ languages | Dec 2024 |
+| **EmbeddingGemma** | 300M | 2K tokens | Bi-directional Encoder | Best open embedding model | Embeddings/Search | ❌ | **MTEB: 68.2, <22ms EdgeTPU, <200MB RAM** | Sep 2025 |
+| **CodeGemma** | 2B, 7B | 8K tokens | Decoder-only | Fill-in-the-middle coding | Code Generation | ❌ | **8 programming languages**, 500-1000B code tokens | Apr 2024 |
+| **MedGemma** | 4B, 27B | Same as Gemma 3 | Decoder-only + Vision | Medical multimodal AI | Medical/Healthcare | ✅ | **4B: 64.4% MedQA, 27B: 87.7% MedQA** | Aug 2025 |
+| **ShieldGemma** | 2B-27B (v1), 4B (v2) | Variable | Classifier | Content safety moderation | Safety/Moderation | ✅ (v2) | **4 text + 3 image safety categories** | Jul 2024 / Apr 2025 |
+| **RecurrentGemma** | 2B, 9B | Arbitrary | Griffin Hybrid | Memory-efficient long sequences | Long Sequences | ❌ | **Fixed-size state, better long-context throughput** | Apr 2024 |
+| **PaliGemma** | 3B, 10B, 28B | Variable | Vision + Language | Structured vision outputs | Vision-Language | ✅ | **Object detection + segmentation outputs** | May 2024 |
+
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
